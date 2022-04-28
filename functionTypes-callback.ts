@@ -1,4 +1,4 @@
-function add(n1: number, n2: number) {
+function adds(n1: number, n2: number) {
     return n1 + n2
 }
 
@@ -18,5 +18,4 @@ addAndHandle(10, 20, (result) =>{
     
 } )
 
-let combi
  

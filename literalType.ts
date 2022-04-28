@@ -1,4 +1,4 @@
-function combine(n1: number | string , n2: number | string, resultConversion: "as-number" | "as-text" ){
+function combines(n1: number | string , n2: number | string, resultConversion: "as-number" | "as-text" ){
     let result
     if (typeof n1 === "number" && typeof n2 === "number" || resultConversion==="as-number"){
          result = +n1 + +n2 // alternative way to convert it to number is using parseFloat(n1) + parseFloat(n2)
@@ -9,17 +9,18 @@ function combine(n1: number | string , n2: number | string, resultConversion: "a
 }
 
 
-const combineAge = combine(2, 4, "as-number")
-console.log(combineAge);
+const combineAges = combines(2, 4, "as-number")
+console.log(combineAges);
 
-const combineName = combine("Ade", "bayo", "as-text")
-console.log(combineName);
 
-const combineBothNameAndNumber = combine("20", " 90", "as-number")
-console.log(combineBothNameAndNumber);
+const combineNames = combines("Ade", "bayo", "as-text")
+console.log(combineNames);
 
-const asNumber = combine(20, " here", "as-number")
-console.log(asNumber);
+const combineBothNameAndNumbers = combines("20", " 90", "as-number")
+console.log(combineBothNameAndNumbers);
 
-const asString = combine(20, " here", "as-text")
-console.log(asString);
+const asNum = combines(20, " here", "as-number")
+console.log(asNum);
+
+const asStrings = combines(20, " here", "as-text")
+console.log(asStrings);

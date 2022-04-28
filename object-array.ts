@@ -2,19 +2,19 @@
 //     name: string;
 //     age: number
 // } = {
-    const person =  {
+    const persons =  {
        name: "Fayob",
         age: 30,
         hobbies: ["Sports", "Learning"],
     }
     
-    let favoriteActivity: string[]
+    let favoriteActivities: string[]
     
-    favoriteActivity = ["Sports"]
-    favoriteActivity.push("Writing")
+    favoriteActivities = ["Sports"]
+    favoriteActivities.push("Writing")
     
-    console.log(favoriteActivity);
-    console.log(favoriteActivity[3]);
+    console.log(favoriteActivities);
+    console.log(favoriteActivities[3]);
     console.log(person.name);
     
     for (const hobby of person.hobbies) {

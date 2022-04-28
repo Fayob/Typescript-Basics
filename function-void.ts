@@ -1,10 +1,10 @@
-function add(n1: number, n2: number) {
+function sum(n1: number, n2: number) {
     return n1 + n2
 }
 
-function printResult(num: number){
+function printResults(num: number){
     console.log("Result:" + num);
 }
 
-console.log(printResult(add(5, 12)));
+console.log(printResults(sum(5, 12)));
  
