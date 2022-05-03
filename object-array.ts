@@ -15,9 +15,9 @@
     
     console.log(favoriteActivities);
     console.log(favoriteActivities[3]);
-    console.log(person.name);
+    console.log(persons.name);
     
-    for (const hobby of person.hobbies) {
+    for (const hobby of persons.hobbies) {
         console.log(hobby);
         
     }
