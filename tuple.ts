@@ -2,7 +2,7 @@
 //     name: string;
 //     age: number
 // } = {
-const person: {
+const personA: {
     name: string;
     age: number;
     hobbies: string[];
@@ -14,8 +14,8 @@ const person: {
     role: [2, "author"]
 }
 
-person.role.push("admin")
-console.log(person.role);
+personA.role.push("admin")
+console.log(personA.role);
 
 // person.role[1] = 10 // not allowed in tuple because it want a string as the second value
 // person.role = [1, "firstString", "anotherString"] // not allowed in tuple
@@ -27,9 +27,9 @@ favoriteActivity = ["Sports"]
 favoriteActivity.push("Writing")
 
 console.log(favoriteActivity);
-console.log(person.name);
+console.log(personA.name);
 
-for (const hobby of person.hobbies) {
+for (const hobby of personA.hobbies) {
     console.log(hobby);
     
 }
